@@ -2,10 +2,10 @@ FROM ubuntu:16.04
 
 LABEL maintainer="ODIN Docker Maintainers"
 
-RUN mkdir ~/.odin
+RUN mkdir setup
 
-COPY setup_auto.bash ~/.odin/ && 
+COPY setup_auto.bash setup
 
-RUN ~/.odin/setup_auto.bash
+RUN setup/setup_auto.bash
 
 
