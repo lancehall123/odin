@@ -6,6 +6,8 @@ RUN mkdir setup
 
 COPY setup_auto.bash setup
 
+RUN chmod 777 setup/setup_auto.bash
+
 RUN setup/setup_auto.bash
 
 
