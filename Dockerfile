@@ -8,7 +8,7 @@ RUN mkdir /root/.odin
 
 COPY setup_auto.bash setup
 
-COPY bin/* /root/.odin
+COPY bin/* /root/.odin/
 
 RUN chmod 777 /root/.odin/*.*
 
