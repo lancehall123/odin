@@ -1,11 +1,10 @@
 #!/bin/bash
 
 
-cp /root/.odin/*.* /usr/bin/. && cd
+cp /root/.odin/* /usr/bin/. && cd
 
 #Set up initial odin.conf file.  The ipaddress part might not work if multiple adapters 
 #present (like for ipv6 and ipv4).
-mkdir ~/.odin
 config=~/.odin/odin.conf 
 #ipaddress=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 ipaddress="Dummy"
