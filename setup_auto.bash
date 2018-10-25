@@ -13,7 +13,7 @@ echo "listen=1" >> $config
 echo "daemon=1" >> $config
 echo "logtimestamps=1" >> $config
 echo "maxconnections=256" >> $config
-echo "externalip=$ipaddress" >> $config
+#echo "externalip=$ipaddress" >> $config
 echo "masternodeaddr=$ipaddress" >> $config
 
 
