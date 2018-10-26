@@ -21,7 +21,6 @@ echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
 /setup/stopstarthack.bash
 sleep 30
-odind
 echo " "
 echo "Masternode VPS setup complete."
 echo "(it will now take a few minutes for the mn to get ready)"
