@@ -6,7 +6,7 @@ RUN mkdir setup
 
 RUN mkdir /root/.odin
 
-COPY setup_auto.bash stopstarthack.bash setup
+COPY setup_auto.bash stopstarthack.bash setup/
 
 COPY bin/* /root/.odin/
 
