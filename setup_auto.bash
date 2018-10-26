@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 cp /root/.odin/* /usr/bin/. && cd
 
 #Set up initial odin.conf file.  The ipaddress part might not work if multiple adapters 
@@ -38,4 +37,4 @@ echo "$ipaddress"
 echo "Your masternode private key is:"
 echo "$mnkey"
 echo " "
- 
+pause
