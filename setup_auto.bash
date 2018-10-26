@@ -19,6 +19,7 @@ odind --daemon
 mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
+sleep 5
 ./setup/stopstarthack.bash
 sleep 30
 echo " "
