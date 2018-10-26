@@ -23,6 +23,7 @@ mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
 odin-cli stop
+sleep 30
 odind
 
 
@@ -37,4 +38,4 @@ echo "$ipaddress"
 echo "Your masternode private key is:"
 echo "$mnkey"
 echo " "
-sleep infinity
+
