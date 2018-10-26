@@ -21,7 +21,7 @@ mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
 odin-cli stop
-sleep 30
+sleep 1
 odind --daemon
 echo " "
 echo "Masternode VPS setup complete."

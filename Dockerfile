@@ -16,4 +16,4 @@ RUN chmod 777 setup/setup_auto.bash
 
 RUN setup/setup_auto.bash
 
-RUN odind
+RUN odind --daemon
