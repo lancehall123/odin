@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-LABEL maintainer="ODIN Docker Maintainers"
+LABEL maintainer="ODIN Docker Maintainer"
 
 RUN mkdir setup
 
