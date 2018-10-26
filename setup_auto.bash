@@ -37,4 +37,4 @@ echo "$ipaddress"
 echo "Your masternode private key is:"
 echo "$mnkey"
 echo " "
-pause
+sleep infinity
