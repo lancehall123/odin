@@ -19,7 +19,7 @@ odind --daemon
 mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
-/setup/stopstarthack.bash
+setup/stopstarthack.bash
 sleep 30
 echo " "
 echo "Masternode VPS setup complete."
