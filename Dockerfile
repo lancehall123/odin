@@ -19,5 +19,3 @@ RUN ./setup/setup_auto.bash
 RUN sleep 60
 
 RUN odind
-
-RUN sleep infinity
