@@ -16,4 +16,4 @@ RUN chmod 777 setup/setup_auto.bash
 
 RUN setup/setup_auto.bash
 
-
+CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
