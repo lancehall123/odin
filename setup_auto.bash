@@ -16,12 +16,10 @@ echo "maxconnections=256" >> $config
 #echo "masternodeaddr=$ipaddress" >> $config
 #start odind to get mn private key and append to odin.conf, restart odind. 
 odind --daemon
-sleep 30
 mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
-odin-cli stop && sleep 30
-odind
+odin-cli stop
 echo " "
 echo "Masternode VPS setup complete."
 echo "(it will now take a few minutes for the mn to get ready)"

@@ -18,4 +18,4 @@ RUN setup/setup_auto.bash
 
 RUN sleep 60
 
-RUN odind --daemon
+RUN odind
