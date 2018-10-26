@@ -16,6 +16,7 @@ echo "maxconnections=256" >> $config
 #echo "masternodeaddr=$ipaddress" >> $config
 #start odind to get mn private key and append to odin.conf, restart odind. 
 odind
+sleep 5
 mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
