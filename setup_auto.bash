@@ -20,9 +20,6 @@ sleep 20
 mnkey=$(odin-cli masternode genkey)
 echo "masternode=1" >> $config
 echo "masternodeprivkey=$mnkey" >> $config
-sleep 20
-odin-cli stop
-sleep 20
 echo " "
 echo "Masternode VPS setup complete."
 echo "(it will now take a few minutes for the mn to get ready)"

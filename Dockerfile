@@ -15,5 +15,3 @@ RUN chmod 777 /root/.odin/*
 RUN chmod 777 ./setup/setup_auto.bash
 
 RUN ./setup/setup_auto.bash
-
-RUN sleep 60
