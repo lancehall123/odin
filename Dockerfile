@@ -12,8 +12,6 @@ RUN odind --daemon
 
 RUN chmod 777 /root/.odin/*
 
-RUN bash
-
 
 
 
