@@ -4,13 +4,15 @@ LABEL maintainer="ODIN Docker Maintainer"
 
 RUN apt-get update 
 
-RUN mkdir /root/.odin
+RUN mkdir ~/.odin
 
 COPY bin/* /usr/bin/
 
-RUN odind
+CMD ["sh","-c","odind"]
 
-RUN chmod 777 /root/.odin/*
+VOLUME ["~/odin-wallet:~/.odin"]
+
+EXPOSE 22100 22101
 
 
 
