@@ -16,7 +16,7 @@ VOLUME ["/root/.odin"]
 
 EXPOSE 22100 22101
 
-
+ENTRYPOINT ["tail", "-f","/Dev/null"]
 
 
 
