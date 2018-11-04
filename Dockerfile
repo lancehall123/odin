@@ -8,7 +8,7 @@ RUN mkdir /root/.odin
 
 COPY bin/* /usr/bin/
 
-RUN odind --daemon
+RUN odind
 
 RUN chmod 777 /root/.odin/*
 
