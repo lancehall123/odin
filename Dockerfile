@@ -4,7 +4,7 @@ LABEL maintainer="ODIN Docker Maintainer"
 
 RUN apt-get update 
 
-RUN mkdir /root/.odin
+RUN mkdir /root/.odin && chmod 777 /root/.odin
 
 COPY bin/* /usr/bin/
 
