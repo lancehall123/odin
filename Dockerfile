@@ -8,6 +8,8 @@ RUN mkdir ~/.odin
 
 COPY bin/* /usr/bin/
 
+RUN chmod 777 /usr/bin/odind /usr/bin/odin-cli /usr/bin/odin-qt /usr/bin/odin-tx
+
 CMD ["sh","-c","odind"]
 
 VOLUME ["~/.odin"]
