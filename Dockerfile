@@ -16,7 +16,7 @@ VOLUME ["/root/.odin"]
 
 EXPOSE 22100 22101
 
-RUN tail -f /dev/null
+CMD ["sh","-c","bash"]
 
 
 
