@@ -2,16 +2,19 @@ FROM ubuntu:16.04
 
 LABEL maintainer="ODIN Docker Maintainer"
 
-RUN mkdir setup
+RUN apt-get update 
 
 RUN mkdir /root/.odin
 
-COPY setup_auto.bash ./setup/
+COPY bin/* /usr/bin/
 
-COPY bin/* /root/.odin/
+RUN odind --daemon
 
 RUN chmod 777 /root/.odin/*
 
-RUN chmod 777 ./setup/setup_auto.bash
+RUN bash
 
-RUN ./setup/setup_auto.bash
+
+
+
+
