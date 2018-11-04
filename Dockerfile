@@ -10,7 +10,7 @@ COPY bin/* /usr/bin/
 
 CMD ["sh","-c","odind"]
 
-VOLUME ["~/odin-wallet:~/.odin"]
+VOLUME ["~/.odin"]
 
 EXPOSE 22100 22101
 
