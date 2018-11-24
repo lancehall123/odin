@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM alpine:3.7
 
 LABEL maintainer="ODIN Docker Maintainer"
 
@@ -13,6 +13,8 @@ RUN mkdir /root/odin_data_sync && chmod 777 /root/odin_data_sync
 COPY bin/* /usr/bin/
 
 RUN chmod 777 /usr/bin/odind /usr/bin/odin-cli /usr/bin/odin-qt /usr/bin/odin-tx
+
+CMD ["sh","-c",'odind --daemon']
 
 EXPOSE 22100 22101
 
